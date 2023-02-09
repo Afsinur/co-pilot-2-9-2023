@@ -26,10 +26,10 @@ function TopSection() {
   return (
     <div className="top-main-container">
       <div>
-        <span style={{ width: "20px", margin: "0px 8px" }}>
+        <span>
           <Image src={top_search} alt="image" />
         </span>
-        <span>
+        <span className="top_text">
           Test out the first ever visual search tool for the art industry -&gt;
         </span>
       </div>
@@ -43,16 +43,10 @@ function TopSection() {
           </span>
 
           <button className="waitlistBtn">
-            <sup
-              style={{
-                margin: "0px 5px",
-                width: "10px",
-                display: "inline-block",
-              }}
-            >
+            <span>
               <Image src={arrow_left} alt="arrow" />
-            </sup>
-            Join Waitlist
+            </span>
+            <span>Join Waitlist</span>
           </button>
         </div>
       </div>
@@ -72,7 +66,7 @@ function TopSection() {
         <div className="video">
           <video src=""></video>
 
-          <button>
+          <button className="sp-btn">
             Learn More
             <div className="imgdiv">
               <Image src={arrow_right} alt="arrow" />
@@ -106,7 +100,7 @@ function PartOne() {
               your clients preferences
             </p>
 
-            <button>
+            <button className="sp-btn">
               <span>Try Our Demo</span>
               <div className="imgdiv">
                 <Image src={white_arrow_right} alt="arrow" />
@@ -148,7 +142,7 @@ function PartTwo() {
               revenue generated
             </p>
 
-            <button>
+            <button className="sp-btn">
               <span>Get Early Access</span>
               <div className="imgdiv">
                 <Image src={white_arrow_right} alt="arrow" />
@@ -210,7 +204,7 @@ function PartFour() {
               museums find and learn about art with culture and context
             </p>
 
-            <button>
+            <button className="sp-btn">
               <span>Get Early Access</span>
               <div className="imgdiv">
                 <Image src={white_arrow_right} alt="arrow" />
